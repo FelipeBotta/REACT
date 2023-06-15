@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilos/style.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <a href="#">Home</a>
-        <a href="#">Sobre Mim</a>
+    <header class="cabecalho">
+        <nav class="menu">
+        <a class="navlink"  href="index.html">Home</a>
+        <a class="navlink"  href="about.html">Sobre Mim</a>
+        </nav>
     </header>
     <main class="conteudo">
         <section class="conteudo__conteudo">
@@ -32,9 +34,13 @@
                 </a>
             </div>
         </section>
-        <img src="Imagens/Imagem.png" alt="Mulher com Notebook">
+        <section class="img-container">
+        <img src="Imagens/Imagem.png" class="foto" alt="Mulher com Notebook">
+        </section>
 
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por <a href="#">Luis Botta</a></p>
+    </footer>
 </body>
 </html>
