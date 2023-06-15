@@ -35,7 +35,7 @@ body{
 }
 
 .navlink{
-    font-family: --fonte-secundaria;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
     color: var(--cor-terciaria);
@@ -71,7 +71,7 @@ body{
 }
 
 .paragrafo{
-    font-family: --fonte-secundaria;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
 
@@ -136,7 +136,7 @@ body{
     color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 100;
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
@@ -144,6 +144,6 @@ body{
 
  }
 
- .rodape a{
+ .rodape a {
     text-decoration: none;
  }
