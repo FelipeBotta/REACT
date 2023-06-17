@@ -36,7 +36,7 @@ body{
 
 .navlink{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -52,7 +52,7 @@ body{
 }
 
 .conteudo__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;      
@@ -61,7 +61,7 @@ body{
 
 .titulo{
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;     
 
 }
 
@@ -72,7 +72,7 @@ body{
 
 .paragrafo{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .botoes{
@@ -88,13 +88,13 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0px;
     text-align: center;
     border-radius: 8px;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-secundaria);
     text-decoration: none;
 }
@@ -102,7 +102,7 @@ body{
 .subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400px;
-    size: 24px;
+    font-size: 1.5rem;
 }
 
 .link:hover{
@@ -110,6 +110,12 @@ body{
 
 
 }
+
+.foto{
+    width: 50%;
+
+}
+
 
 .img-container{
     border-radius: 16px;
@@ -135,7 +141,7 @@ body{
  .rodape{
     color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 100;
     background-color: var(--cor-terciaria);
     padding: 24px;
