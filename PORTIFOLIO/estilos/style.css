@@ -49,6 +49,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px
 }
 
 .conteudo__conteudo{
@@ -152,4 +153,26 @@ body{
 
  .rodape a {
     text-decoration: none;
+ }
+
+ @media (max-width: 1200px){
+    
+    .cabecalho{
+     padding: 12%;   
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+
+    .conteudo{
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .conteudo__conteudo{
+        width:  auto;
+    }
+
  }
