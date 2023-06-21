@@ -21,7 +21,7 @@
     border: 1px solid var(--branco);
     color: var(--branco);
     border-radius: 24px;
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -32,5 +32,6 @@
     color: var(--branco);
     text-align: center;
     background: url("../assets/Pesquisa.svg") no-repeat;
+    padding: 0 1.5rem;
     
 }
