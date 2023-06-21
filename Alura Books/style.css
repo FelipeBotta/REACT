@@ -1,5 +1,6 @@
 @import url(styles/header.css);
 @import url(styles/banner.css);
+@import url(styles/carrossel.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
@@ -9,6 +10,7 @@
     --laranja: #EB9B00;
     --azul: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte:'Poppins';
+    --azul2: #002F52;
 
     
 }

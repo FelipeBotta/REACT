@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=reset.css">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
@@ -37,6 +38,77 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+         <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
     
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt="Livro sobre Apache Kafka"></div>
+            <div class="swiper-slide"><img src="assets/Liderança.png" alt="Livro Sobre Liderança"></div>
+            <div class="swiper-slide"><img src="assets/Javascript.png" alt="Livro Sobre Javascript"></div>
+            <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt="Livro Sobre Guia Front-End"></div>
+            <div class="swiper-slide"><img src="assets/Portugol.png" alt="Livro Sobre Portugol"></div>
+            <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro Sobre Acessibilidade"></div>
+
+      
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+    <div class="card">
+        <!--1a linha-->
+        <div class="card__descricao">
+            <!--1a coluna-->
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <!--2a coluna-->
+            <img src="assets/Angular.png" alt="" class="descricao__imagem"> 
+        </div>
+        <!--2a linha-->
+        <div class="card__botoes">
+            <!--1a coluna-->
+            <ul class="botoes">
+                <li class="botoes__item"> <img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"> <img src="assets/Compras.svg" alt="Adicionar ao carrinho"></li>
+            </ul>
+            <!--2a coluna-->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+
+    </div>
+    </section>
+
+
+   
+   
+   
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+      </script>
 </body>
 </html>
