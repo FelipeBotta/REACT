@@ -59,6 +59,7 @@
 
 .descricao__texto{
     font-size: 14px;
+    
 }
 
 .botoes__itens{
@@ -71,4 +72,13 @@
     font-weight: 700;
     color: var(--branco);
     text-decoration: none;
+}
+
+.card__estrela{
+    margin-bottom: .5rem;
+}
+
+.descricao__imagem{
+    width: 75%;
+    
 }
