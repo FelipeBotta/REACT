@@ -12,7 +12,7 @@ while (contador < listaDeTeclas.length) {
 
     const instrumento = tecla.classList[1];
     
-    console.log(instrumento);
+    //console.log(instrumento);
 
     //template-string
     const idAudio = `#som_${instrumento}`;
@@ -23,7 +23,7 @@ while (contador < listaDeTeclas.length) {
 
     contador = contador + 1;
 
-    console.log(idAudio)
+    //console.log(idAudio)
 }
 
 
