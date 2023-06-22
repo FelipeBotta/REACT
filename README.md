@@ -12,3 +12,5 @@ O segundo projeto proposto na formação foi o <a href="Alura%20Plus/index.html"
 O terceiro projeto proposto na formação de HTML5 e CSS3 foi o <a href="Alura%20Books/index.html">Alura Books</a> nele foi utilizado o conceito do mobile first e progressivamente fomos formatando a página de acordo com as outras telas (Tablet e Desktop), a pagina consistia em passar as informações referentes aos livros da Alura, além de possuir um carrossel com os lançamentos e mais vendidos.
 
 Com a conclusão do terceiro projeto no dia <b>22/06</b> foi finalizada a <b>Formação em HTML5 e CSS3</b> da <b>Alura</b>, e hoje <b>23/06</b> inicio minha jornada nos estudos de <b>JavaScript</b> já me preparando para o <b>React</b> que é o objetivo principal deste repositório.
+
+No primeiro curso de JS foi proposto para fazermos a parte dinamica de um <a href="Alura%20Midi/index.html">Controlador Midi</a> onde a interação foi feita entre os pads do Midi e o som que ele emite ao ser ativado (através de clique, tecla enter ou espaço).
