@@ -8,6 +8,14 @@
 
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+    background-image: url(../assets/Menu\ Aberto.png);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul);
+}
+
 .cabecalho{
     background-color: var(--branco);
     display: flex;
@@ -117,6 +125,25 @@ text-transform: uppercase;
 
     .opcoes__botao{
         display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--azul);
+        color: var(--branco);
+    }
+
+    .opcoes__item{
+        padding: 2rem 1rem;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+
     }
 }
 
