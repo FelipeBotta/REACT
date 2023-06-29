@@ -3,7 +3,7 @@ const lista = document.getElementById("lista")
 const itens = JSON.parse(localStorage.getItem("itens")) || []
 
 itens.forEach( (elemento) =>{
-    console.log(elemento.nome, elemento.quantidade)
+    criaElemento(elemento)
 
 })
 
@@ -14,34 +14,75 @@ form.addEventListener("submit", (evento) => {
     const nome = evento.target.elements['nome']
     const quantidade = evento.target.elements['quantidade']
 
-    criaElemento(nome.value, quantidade.value)
+    const existe = itens.find(elemento => elemento.nome === nome.value)
+
+    const itemAtual = {
+        "nome" : nome.value,
+        "quantidade" : quantidade.value
+    }
+
+    if(existe){
+        itemAtual.id = existe.id
+
+        atualizaElemento(itemAtual)
+
+        itens[existe.id] = itemAtual
+
+    } else{
+        itemAtual.id = itens.length
+        
+        criaElemento(itemAtual)
+
+
+        itens.push(itemAtual)
+
+    }    
+
+    localStorage.setItem("itens", JSON.stringify(itens))
 
     nome.value = ""
     quantidade.value = ""
 
+  
 })
 
-function criaElemento(nome, quantidade){
+function criaElemento(item){
 
     const novoItem = document.createElement('li')
     novoItem.classList.add("item")
 
     const numeroItem = document.createElement('strong')
-    numeroItem.innerHTML =quantidade
+    numeroItem.innerHTML =item.quantidade
+    numeroItem.dataset.id = item.id
 
     novoItem.appendChild(numeroItem)
-    novoItem.innerHTML += nome
 
-    
+    novoItem.innerHTML += item.nome 
+
+    novoItem.appendChild(botaoDeleta())
+
     lista.appendChild(novoItem)
 
-    const itemAtual = {
-        "nome" : nome,
-        "quantidade" : quantidade
-    }
 
-    itens.push(itemAtual)
+}
 
-    localStorage.setItem("itens", JSON.stringify(itens))
+function atualizaElemento(item){
+    document.querySelector("[data-id='" + item.id + "']").innerHTML = item.quantidade
+}
+
+function botaoDeleta() {
+    const elementoBotao = document.createElement("button")
+    elementoBotao.innerText = "X"
+
+    elementoBotao.addEventListener("click", function() {
+        deletaElemento(this.parentNode)
+
+    })
+
+    return elementoBotao
+}
+
+function deletaElemento(tag){
+    tag.remove()
 
 }
